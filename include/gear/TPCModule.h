@@ -103,7 +103,7 @@ public:
      *  if fully covered with avtive area, but only that there is no active area outside
      *  the plane extent.
      */
-    virtual const std::vector<double>  & getPlaneExtent() const throw (Exception, std::exception )  = 0;
+    virtual const std::vector<double>  & getPlaneExtent() const = 0;
 
     /** Maximal extent of the sensitive plane, defined relative to global 
      *  origin - [xmin,xmax,ymin,ymax] CARTESIAN or 
@@ -190,7 +190,7 @@ public:
      *  It throws a gear::TPCModule::NoZPositionException in case setZPosition has not 
      *  been called before.
      */
-     virtual double getZPosition() const throw (TPCModule::NoZPositionException) = 0;
+     virtual double getZPosition() const = 0;
 
     /** Returns the rotation of the module, in Rads, with respect 
      *  to the modules internal origin.

@@ -17,8 +17,6 @@ INCLUDE_DIRECTORIES( BEFORE "${PROJECT_BINARY_DIR}" ) # generated GearConfig.h
 INCLUDE_DIRECTORIES( BEFORE "${PROJECT_SOURCE_DIR}/include" )
 INCLUDE_DIRECTORIES( BEFORE "${PROJECT_SOURCE_DIR}/include/gear" )
 
-INCLUDE_DIRECTORIES( SYSTEM  "${PROJECT_SOURCE_DIR}/include/tinyxml" )
-
 
 ###### LIBRARIES #####################################################
 
